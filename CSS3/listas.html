@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		ul{
+			/*list-style: url(TheSecret.png);*/
+			list-style: circle;
+		}
+		ol {
+			list-style: lower-latin;
+		}
+		body {
+			counter-reset: mynum;
+		}
+		p.numbered:before{
+			content: counter(mynum)": ";
+			counter-increment: mynum;
+		}
+	</style>
+</head>
+<body>
+	<h1>Listas nao ordenadas</h1>
+	<ul>
+		<li>Lista 1</li>
+		<li>Lista 2</li>
+		<li>Lista 3</li>
+		<li>Lista 4</li>
+	</ul>
+	<h2>Listas ordenadas</h2>
+	<ol>
+		<li>Lista 1</li>
+		<li>Lista 2</li>
+		<li>Lista 3</li>
+		<li>Lista 4</li>		
+	</ol>
+	<p class="numbered">My style</p>
+	<p class="numbered">Meu estilo</p>
+	<p class="numbered">VIda boa</p>
+	<p class="numbered">Eu sou vencedor</p>
+	<p class="numbered">Faco qualquer coisa</p>				
+</body>
+</html>
